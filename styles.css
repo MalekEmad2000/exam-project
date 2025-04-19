@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #deeaee;
+}
+.main-container{
+
+
+    display: flex;
+
+}
+
+.question-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100vh;
+    padding: 1rem;
+ 
+}
+.marked-questions-container {
+
+ width: 25%;
+ height: 100vh;
+
+
+}
+.question {
+
+
+    width: 70%;
+    height: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-radius: 1rem;
+    background-color: white;
+}
+.question-title {
+
+    margin-bottom: 5%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.choices-container {
+ 
+    padding: 3%;
+    height: 60%;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+ 
+
+}
+.choices-container label {
+
+   
+    
+    width: 45%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+.choices-container label:hover {
+   color: white;
+   background-color: #7B68EE;
+}
+.choices-container input {
+
+  display: none;
+}
+
+.choice-button {
+
+
+}
+.selected-choice {
+
+    color: yellow;
+    background-color: #7B68EE;
+}
+.controls-container {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap:1rem;
+    width: 80%;
+
+}
+.controls-container button {
+    
+    width: 10rem;
+    height: 3rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.question-number {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    width: 5%;
+    height: 100%;;
+}
+
+.controls-container .mark-btn {
+
+    width: 10%;
+    background-color: #f18973;
+}
+
+@media (max-width: 600px) {
+    html {
+      font-size: 0.5rem;
+      
+    }
+    .choices-container label {
+
+        width: 100%;
+    }
+  }

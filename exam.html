@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="question-container">
+    
+        <div class="question">
+            <div class="question-title">
+             <h3 id="question-title">what is your fav club ?</h3>
+            </div>
+             <div class="choices-container">
+                  <label  class="choice-label">
+                    <input class="choice-button" type="radio" name="question" value="A">
+                    Berlin
+                  </label>
+                  <label class="choice-label">
+                    <input class="choice-button" type="radio" name="question" value="B">
+                    Berlin
+                  </label>
+                  <label class="choice-label" >
+                    <input class="choice-button" type="radio" name="question" value="C">
+                    Berlin
+                  </label>
+                  <label class="choice-label">
+                    <input  class="choice-button" type="radio" name="question" value="E">
+                    Berlin
+                 </label>
+
+             </div>
+        </div>
+        <div class="controls-container">
+
+           <button  onclick="prev()">prev </button>
+           <div class="question-number">1</div>
+           <button onclick="next()">next</button>
+           <button class="mark-btn" onclick="mark()">mark</button>
+        
+
+        </div>
+    </div>
+    <div class="marked-questions-container">
+
+
+
+    </div>
+</div>
+    
+    
+    <script src="exam.js"></script>
+</body>
+</html>

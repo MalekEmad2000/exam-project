@@ -1,0 +1,53 @@
+{
+    "questions": [
+      {
+        "questionTitle": "this is question 1",
+        "choices": {
+          "A": "this is the first choice",
+          "B": "this is the second choice",
+          "C": "this is the third choice",
+          "D": "this is the fourth choice"
+        },
+        "correctAnswer": "B"
+      },      {
+        "questionTitle": "this is question 2",
+        "choices": {
+          "A": "carrot",
+          "B": "potatoe",
+          "C": "mango",
+          "D": "apple"
+        },
+        "correctAnswer": "C"
+      },      {
+        "questionTitle": "this is question 3",
+        "choices": {
+          "A": "this is the first choice",
+          "B": "this is the second choice",
+          "C": "this is the third choice",
+          "D": "this is the fourth choice"
+        },
+        "correctAnswer": "A"
+      },      {
+        "questionTitle": "this is question 4",
+        "choices": {
+          "A": "this is the first ",
+          "B": "this is the second ",
+          "C": "this is the third ",
+          "D": "this is the fourth "
+        },
+        "correctAnswer": "B"
+      },
+      {
+        "questionTitle": "this is question 4",
+        "choices": {
+          "A": "this is the first ",
+          "B": "this is the second ",
+          "C": "this is the third ",
+          "D": "this is the fourth "
+        },
+        "correctAnswer": "B"
+      }
+
+    ]
+  }
+    
