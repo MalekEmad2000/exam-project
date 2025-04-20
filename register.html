@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        html{
+            font-size:16px;
+        }
+        body{
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            border: blue solid 1px;
+        }
+        form{
+            padding: 60px 100px;
+            background-color: burlywood;
+            box-shadow: 5px 5px 10px black;
+            border-radius: 50px;
+        }
+        table{
+            line-height: 40px;
+            font-weight: 600;
+        }
+        button{
+            width: 100%;
+            padding: 5px 0px;
+            border-radius: 20px;
+            background-color: cadetblue;
+            box-shadow: 5px 5px 10px black;
+        }
+        button:hover{
+            background-color: rgb(19, 129, 133);
+            color: white;
+            box-shadow: -5px -5px 15px black;
+        }
+        input{
+            border-radius: 10px;
+            line-height: 25px;
+            padding-left: 10px;
+            box-shadow: 0px 0px 5px;
+            border: black solid .5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="login.html" style="border: solid black 1px;">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">User Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" placeholder="user name"><span style="display: none;">*name must be between 3 and 16 characters.</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">E-Mail:</label>
+                </td>
+                <td>
+                    <input type="text" id="email" name="email" placeholder="Example@mail.com"><span style="display: none;">*Enter a valid Email</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">PassWord:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="**************"><span style="display: none;">*Password must be 8chars long and contain at least 1letter</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="ssubmit(event)">Sign in</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="register.js"></script>
+</body>
+
+</html>
