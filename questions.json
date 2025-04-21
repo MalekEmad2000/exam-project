@@ -1,53 +1,314 @@
 {
-    "questions": [
-      {
-        "questionTitle": "this is question 1",
-        "choices": {
-          "A": "this is the first choice",
-          "B": "this is the second choice",
-          "C": "this is the third choice",
-          "D": "this is the fourth choice"
-        },
-        "correctAnswer": "B"
-      },      {
-        "questionTitle": "this is question 2",
-        "choices": {
-          "A": "carrot",
-          "B": "potatoe",
-          "C": "mango",
-          "D": "apple"
-        },
-        "correctAnswer": "C"
-      },      {
-        "questionTitle": "this is question 3",
-        "choices": {
-          "A": "this is the first choice",
-          "B": "this is the second choice",
-          "C": "this is the third choice",
-          "D": "this is the fourth choice"
-        },
-        "correctAnswer": "A"
-      },      {
-        "questionTitle": "this is question 4",
-        "choices": {
-          "A": "this is the first ",
-          "B": "this is the second ",
-          "C": "this is the third ",
-          "D": "this is the fourth "
-        },
-        "correctAnswer": "B"
+  "questions": [
+    {
+      "questionTitle": "What is the capital of France?",
+      "choices": {
+        "A": "Berlin",
+        "B": "Madrid",
+        "C": "Paris",
+        "D": "Lisbon"
       },
-      {
-        "questionTitle": "this is question 4",
-        "choices": {
-          "A": "this is the first ",
-          "B": "this is the second ",
-          "C": "this is the third ",
-          "D": "this is the fourth "
-        },
-        "correctAnswer": "B"
-      }
-
-    ]
-  }
-    
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "Which planet is known as the Red Planet?",
+      "choices": {
+        "A": "Venus",
+        "B": "Mars",
+        "C": "Jupiter",
+        "D": "Saturn"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "How many continents are there?",
+      "choices": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "Who wrote 'Romeo and Juliet'?",
+      "choices": {
+        "A": "Mark Twain",
+        "B": "William Shakespeare",
+        "C": "Jane Austen",
+        "D": "Charles Dickens"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "What is the largest mammal?",
+      "choices": {
+        "A": "African Elephant",
+        "B": "Blue Whale",
+        "C": "Giraffe",
+        "D": "Hippopotamus"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "What is H2O commonly known as?",
+      "choices": {
+        "A": "Salt",
+        "B": "Water",
+        "C": "Hydrogen",
+        "D": "Oxygen"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "What is the boiling point of water at sea level?",
+      "choices": {
+        "A": "100°C",
+        "B": "90°C",
+        "C": "80°C",
+        "D": "120°C"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "questionTitle": "Which country is famous for sushi?",
+      "choices": {
+        "A": "China",
+        "B": "Thailand",
+        "C": "Japan",
+        "D": "Korea"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "Which gas do plants absorb from the atmosphere?",
+      "choices": {
+        "A": "Oxygen",
+        "B": "Nitrogen",
+        "C": "Carbon Dioxide",
+        "D": "Hydrogen"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "What color do you get when you mix red and white?",
+      "choices": {
+        "A": "Pink",
+        "B": "Orange",
+        "C": "Purple",
+        "D": "Brown"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "questionTitle": "Which instrument has keys, pedals, and strings?",
+      "choices": {
+        "A": "Guitar",
+        "B": "Piano",
+        "C": "Drum",
+        "D": "Flute"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "What do bees collect and use to make honey?",
+      "choices": {
+        "A": "Pollen",
+        "B": "Leaves",
+        "C": "Nectar",
+        "D": "Water"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "What is the fastest land animal?",
+      "choices": {
+        "A": "Lion",
+        "B": "Tiger",
+        "C": "Cheetah",
+        "D": "Leopard"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "Which language is primarily spoken in Brazil?",
+      "choices": {
+        "A": "Spanish",
+        "B": "English",
+        "C": "Portuguese",
+        "D": "French"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "What is the square root of 64?",
+      "choices": {
+        "A": "6",
+        "B": "8",
+        "C": "10",
+        "D": "12"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "Which ocean is the largest?",
+      "choices": {
+        "A": "Atlantic",
+        "B": "Indian",
+        "C": "Arctic",
+        "D": "Pacific"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "questionTitle": "Which animal is known as the King of the Jungle?",
+      "choices": {
+        "A": "Elephant",
+        "B": "Tiger",
+        "C": "Lion",
+        "D": "Gorilla"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "How many days are in a leap year?",
+      "choices": {
+        "A": "365",
+        "B": "366",
+        "C": "364",
+        "D": "367"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "Which metal is liquid at room temperature?",
+      "choices": {
+        "A": "Mercury",
+        "B": "Gold",
+        "C": "Silver",
+        "D": "Copper"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "questionTitle": "Which part of the plant conducts photosynthesis?",
+      "choices": {
+        "A": "Root",
+        "B": "Stem",
+        "C": "Leaf",
+        "D": "Flower"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "Which planet has rings around it?",
+      "choices": {
+        "A": "Mars",
+        "B": "Saturn",
+        "C": "Venus",
+        "D": "Mercury"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "How many legs does a spider have?",
+      "choices": {
+        "A": "6",
+        "B": "8",
+        "C": "10",
+        "D": "12"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "Which shape has three sides?",
+      "choices": {
+        "A": "Square",
+        "B": "Circle",
+        "C": "Triangle",
+        "D": "Rectangle"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "Which bird is a universal symbol of peace?",
+      "choices": {
+        "A": "Crow",
+        "B": "Dove",
+        "C": "Owl",
+        "D": "Eagle"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "Which body part helps you smell?",
+      "choices": {
+        "A": "Eyes",
+        "B": "Ears",
+        "C": "Nose",
+        "D": "Mouth"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "How many wheels does a tricycle have?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "Which day comes after Friday?",
+      "choices": {
+        "A": "Thursday",
+        "B": "Saturday",
+        "C": "Sunday",
+        "D": "Monday"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "Which month has 28 days (and 29 in a leap year)?",
+      "choices": {
+        "A": "January",
+        "B": "February",
+        "C": "March",
+        "D": "April"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "What do cows drink?",
+      "choices": {
+        "A": "Milk",
+        "B": "Juice",
+        "C": "Water",
+        "D": "Soda"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "questionTitle": "How many hours are there in a day?",
+      "choices": {
+        "A": "12",
+        "B": "24",
+        "C": "36",
+        "D": "48"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "questionTitle": "What color is the sky on a clear day?",
+      "choices": {
+        "A": "Blue",
+        "B": "Green",
+        "C": "Red",
+        "D": "Yellow"
+      },
+      "correctAnswer": "A"
+    }
+  ]
+}
