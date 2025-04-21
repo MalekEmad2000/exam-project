@@ -6,9 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <div class="Timer-Container">
-      <div class="Timer"></div>
+  <body style="position: relative;">
     </div>
     <div class="main-container">
       <div class="question-container">
@@ -61,7 +59,8 @@
       <div class="marked-questions-container">
       </div>
     </div>
-
+     <button onclick="SubmitExam()" id="SubmitButton">Submit exam</button>
+     <span id="timer" class="timer"></span>
     <script src="exam.js"></script>
   </body>
 </html>
