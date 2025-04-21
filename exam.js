@@ -1,8 +1,7 @@
 var questionTitle = document.getElementById("question-title");
 var choices = document.querySelectorAll(".choice-button");
-var pageNumber = document.getElementsByClassName("question-number")[0];
-var Timer = document.querySelector(".Timer");
 
+var pageNumber = document.getElementsByClassName("question-number")[0];
 // global variable to get current question index starting with index 0 aka first question;
 var currentQuestion = 0;
 // array containig all questions
@@ -116,19 +115,41 @@ function rednderMark() {
     markedDiv.append(button);
   });
 }
-function examTime() {
-  var sec = 0;
-  var examTime = 1800000;
-  var interval = setInterval(() => {
-    sec += 1000;
-    var percantage = (sec / examTime) * 100;
-    Timer.style.display = "block";
-    Timer.style.width = percantage + "%";
-  }, 1000);
 
-  var timeout = setTimeout(() => {
-    clearInterval(interval);
-    alert(sec);
-  }, examTime + 100);
+//////////////////////////////////////////////////////////////
+
+//submitting and getting result
+function SubmitExam() {
+  let result = 0;
+  questions.forEach(question => {
+    if (question.answer === question.correctAnswer) {
+      result++;
+    }
+  });
+  let Fresults =Math.round((result / questions.length) * 1000)/10;
+  const params = new URLSearchParams({
+    Fresults: Fresults
+  }).toString();
+  location.replace(`final result.html?${params}`)
 }
-examTime();
+
+//30mins timer
+let SecCounter = 0;
+let MinCounter=0;
+let intr=setInterval(function () {
+  SecCounter++;                                                           //sec counter
+  if(SecCounter==60){                                                     //mins counter
+    SecCounter=0;
+    MinCounter++
+  }
+  let timer=document.getElementById("timer");
+  timer.textContent=`Time Left [${29-MinCounter}:${59-SecCounter}]`
+  if(MinCounter==26){                                                    //5mins alert timer
+    timer.className="timer2"
+  }
+  if(MinCounter==30){
+    clearInterval(intr)
+    SubmitExam();
+  }
+}, 1000);
+
