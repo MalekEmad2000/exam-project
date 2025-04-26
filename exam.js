@@ -131,9 +131,27 @@ function SubmitExam() {
     Fresults: Fresults
   }).toString();
   location.replace(`final result.html?${params}`)
+ 
+}
+function timeOutSubmit(){
+
+  let result = 0;
+  questions.forEach(question => {
+    if (question.answer === question.correctAnswer) {
+      result++;
+    }
+  });
+  let Fresults =Math.round((result / questions.length) * 1000)/10;
+  const params = new URLSearchParams({
+    Fresults: Fresults
+  }).toString();
+  location.replace(`timeout.html?${params}`)
+
+
 }
 
 //30mins timer
+var examLength=9;
 let SecCounter = 0;
 let MinCounter=0;
 let intr=setInterval(function () {
@@ -143,13 +161,14 @@ let intr=setInterval(function () {
     MinCounter++
   }
   let timer=document.getElementById("timer");
-  timer.textContent=`Time Left [${29-MinCounter}:${59-SecCounter}]`
+  timer.textContent=`Time Left [${examLength-MinCounter}:${59-SecCounter}]`
   if(MinCounter==26){                                                    //5mins alert timer
     timer.className="timer2"
   }
-  if(MinCounter==30){
+  if(MinCounter==examLength){
     clearInterval(intr)
-    SubmitExam();
+    timeOutSubmit();
+    
   }
 }, 1000);
 

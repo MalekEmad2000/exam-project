@@ -151,20 +151,34 @@ body {
 
 #SubmitButton {
   position: absolute;
-  background-color: rgb(255, 0, 0);
-  top: 30px;
-  left: 30px;
+  background-color: #53a8b6;
+  top: 5vw;
+  left: 5vw;
+  border: none;
   border-radius: 15px;
-  font-size: 30px;
-  padding: 10px 20px;
+  font-size: 5vw;
+  color: white;
+  padding: 2vw 4vw;
   box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, font-size 0.3s, padding 0.3s;
 }
 
 #SubmitButton:hover {
-  background-color: rgb(152, 0, 0);
+  background-color: #00bbf0;
   box-shadow: 0px 0px 10px black;
-  color: rgb(255, 0, 0);
 }
+
+
+@media (min-width: 600px) {
+  #SubmitButton {
+    font-size: 30px;
+    padding: 10px 20px;
+    top: 30px;
+    left: 30px;
+  }
+}
+
 
 .timer {
   position: absolute;

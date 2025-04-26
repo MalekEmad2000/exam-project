@@ -9,13 +9,20 @@ let alert2 = document.getElementsByTagName("span")[1];
 let alert3 = document.getElementsByTagName("span")[2];
 
 function ssubmit(e) {
+    e.preventDefault();
     alert1.setAttribute("style", "display:none;");
     alert2.setAttribute("style", "display:none;");
     alert3.setAttribute("style", "display:none;");
 
-    if (RegexName.test(NameInPut.value) && RegexEmail.test(EmailInPut.value) && RegexPassword.test(PasswordInPut.value)) {}
+    if (RegexName.test(NameInPut.value) && RegexEmail.test(EmailInPut.value) && RegexPassword.test(PasswordInPut.value)) {
+
+        localStorage.setItem('name', NameInPut.value);
+        localStorage.setItem('password', PasswordInPut.value);
+        location.replace("login.html");
+        
+    }
     else {
-        e.preventDefault();
+        
         if (!RegexName.test(NameInPut.value)) {
             NameInPut.value = "";
             alert1.setAttribute("style", "color:red;");

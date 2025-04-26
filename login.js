@@ -3,16 +3,18 @@ const username = document.getElementById("username"),
 document.getElementsByTagName("span")[0].setAttribute("style", "display:none;");
 document.getElementsByTagName("span")[1].setAttribute("style", "display:none;");
 
-let LoggedUserName = location.search.split("&")[0].split("=")[1];
-let LoggedUserPass = location.search.split("&")[2].split("=")[1];
-
+let LoggedUserName = localStorage.getItem('name');
+let LoggedUserPass =  localStorage.getItem('password');
 
 
 
 function LogIn(e) {
-    if (LoggedUserName === username.value && LoggedUserPass === password.value) { }
+    e.preventDefault();
+    if (LoggedUserName === username.value && LoggedUserPass === password.value) { 
+
+        location.replace("exam.html");
+    }
     else {
-        e.preventDefault();
         document.getElementsByTagName("span")[0].setAttribute("style", "display:none;");
         document.getElementsByTagName("span")[1].setAttribute("style", "display:none;");
         if (LoggedUserName !== username.value) {
