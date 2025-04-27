@@ -4,89 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
         }
-        html{
-            font-size:16px;
-        }
-        body{
+
+        body {
             background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            height: 100vh;
-            border: blue solid 1px;
+            align-items: center;
+            min-height: 100vh;
         }
-        form{
-            padding: 60px 100px;
-            background-color: burlywood;
-            box-shadow: 5px 5px 10px black;
-            border-radius: 50px;
-        }
-        table{
-            line-height: 40px;
-            font-weight: 600;
-        }
-        button{
-            width: 100%;
-            padding: 5px 0px;
+
+        form {
+           
+            background: rgba(255, 255, 255, 0.4); /* Light transparent white */
+  backdrop-filter: blur(10px); /* Blurs whatever is behind */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px; /* Optional: rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: subtle border */
+            padding: 40px 50px;
             border-radius: 20px;
-            background-color: cadetblue;
-            box-shadow: 5px 5px 10px black;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            animation: fadeInDown 1s ease both;
+            width: 100%;
+            max-width: 400px;
+       
         }
-        button:hover{
-            background-color: rgb(19, 129, 133);
-            color: white;
-            box-shadow: -5px -5px 15px black;
+
+        table {
+            width: 100%;
         }
-        input{
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
             border-radius: 10px;
-            line-height: 25px;
-            padding-left: 10px;
-            box-shadow: 0px 0px 5px;
-            border: black solid .5px;
+            transition: 0.3s;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+
+        input:focus {
+            border-color: #74ebd5;
+            box-shadow: 0px 0px 10px #74ebd5;
+            outline: none;
+        }
+
+        span {
+            display: block;
+            color: red;
+            font-size: 0.8rem;
+            margin-top: -15px;
+            margin-bottom: 10px;
+            display: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #74ebd5;
+            color: #333;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background: #4ac4b6;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            color: white;
+            font-size: 0.9rem;
+            animation: fadeInUp 1s ease both;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 
 <body>
-    <form action="login.html" style="border: solid black 1px;">
+
+    <form action="login.html">
         <table>
             <tr>
-                <td>
-                    <label for="name">User Name:</label>
-                </td>
-                <td>
-                    <input type="text" id="name" name="name" placeholder="user name"><span style="display: none;">*name must be between 3 and 16 characters.</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">E-Mail:</label>
-                </td>
-                <td>
-                    <input type="text" id="email" name="email" placeholder="Example@mail.com"><span style="display: none;">*Enter a valid Email</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="password">PassWord:</label>
-                </td>
-                <td>
-                    <input type="password" id="password" name="password" placeholder="**************"><span style="display: none;">*Password must be 8chars long and contain at least 1letter</span>
+                <td colspan="2">
+                    <label for="name">User Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your username">
+                    <span>*Name must be between 3 and 16 characters.</span>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <button onclick="ssubmit(event)">Sign in</button>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com">
+                    <span>*Enter a valid Email.</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="********">
+                    <span>*Password must be at least 8 characters and contain a letter.</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="ssubmit(event)">Sign In</button>
                 </td>
             </tr>
         </table>
     </form>
+
+    <footer>
+        &copy; 2025 ITI Project All rights reserved.
+    </footer>
+
     <script src="register.js"></script>
 </body>
 

@@ -150,8 +150,8 @@ function timeOutSubmit(){
 
 }
 
-//30mins timer
-var examLength=9;
+// exam length
+var examLength=0;
 let SecCounter = 0;
 let MinCounter=0;
 let intr=setInterval(function () {
@@ -162,7 +162,7 @@ let intr=setInterval(function () {
   }
   let timer=document.getElementById("timer");
   timer.textContent=`Time Left [${examLength-MinCounter}:${59-SecCounter}]`
-  if(MinCounter==26){                                                    //5mins alert timer
+  if(MinCounter==(examLength-0.9*examLength)){                                                    //5mins alert timer
     timer.className="timer2"
   }
   if(MinCounter==examLength){

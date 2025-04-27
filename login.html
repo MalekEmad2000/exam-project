@@ -4,82 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
+            padding: 0;
         }
-        html{
-            font-size:16px;
+
+        html {
+            font-size: 16px;
         }
-        body{
-            background-color:rgb(135, 215, 222) ;
+
+        body {
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-            border: rgb(252, 92, 236) solid 1px;
-        } 
-        
-        form{
-            padding: 60px 100px;
-            background-color: beige;
-            box-shadow: 5px 5px 10px black;
-            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
         }
-        table{
-            line-height: 40px;
-            font-weight: 600;
-        }
-        button{
-            width: 100%;
-            padding: 5px 0px;
+
+        form {
+            padding: 40px 50px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
-            background-color: cadetblue;
-            box-shadow: 5px 5px 10px black;
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 1s ease both;
         }
-        button:hover{
-            background-color: rgb(19, 129, 133);
-            color: white;
-            box-shadow: -5px -5px 15px black;
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #3c8dbc;
         }
-        input{
+
+        label {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
             border-radius: 10px;
-            line-height: 25px;
-            padding-left: 10px;
-            box-shadow: 0px 0px 5px;
-            border: black solid .5px;
-        } 
-        </style>
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #3c8dbc;
+            outline: none;
+            box-shadow: 0 0 8px rgba(60, 141, 188, 0.5);
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px 0;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #3c8dbc, #2a6f85);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #2a6f85, #3c8dbc);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <form >
-        <table>
-            <tr>
-                <td>
-                    <label for="username">UserName:</label>
-                </td>
-                <td>
-                    <input type="text" id="username" name="username" placeholder="user-name"><span>*Un registered Name</span>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="password">UserPassword:</label>
-                </td>
-                <td>
-                  <input type="password" id="password" name="UserPassword" placeholder="*********"><span>*Wrong Password</span>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit" onclick="LogIn(event)">Log in</button>
-                </td>
-            </tr>
-        </table>
+    <form>
+        <h1>Login to Your Account</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <span>*Unregistered Name</span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <span>*Wrong Password</span>
+
+        <div class="form-footer">
+            <button type="submit" onclick="LogIn(event)">Log In</button>
+        </div>
     </form>
+
+    <script src="login.js"></script>
 </body>
-<script src="login.js"></script>
+
 </html>

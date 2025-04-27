@@ -44,7 +44,7 @@ body {
 
 .question-title {
   margin-bottom: 5%;
-  padding: 1rem;
+  padding:3rem 0 0 2rem;
   font-size: 1rem;
   font-family: sans-serif;
 }
@@ -54,6 +54,7 @@ body {
   height: 60%;
   gap: 0.5rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -73,7 +74,7 @@ body {
 
 .choices-container label:hover {
   color: white;
-  background-color: #7b68ee;
+  background-color: #4facfe;
 }
 
 .choices-container input {
@@ -81,15 +82,15 @@ body {
 }
 
 .selected-choice {
-  color: yellow;
-  background-color: #7b68ee;
+  color: white;
+  background-color:#4facfe;
 }
 
 .controls-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 2rem;
   width: 80%;
 }
 
