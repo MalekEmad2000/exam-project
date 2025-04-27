@@ -151,7 +151,7 @@ function timeOutSubmit(){
 }
 
 // exam length
-var examLength=0;
+var examLength=10;
 let SecCounter = 0;
 let MinCounter=0;
 let intr=setInterval(function () {
@@ -162,7 +162,8 @@ let intr=setInterval(function () {
   }
   let timer=document.getElementById("timer");
   timer.textContent=`Time Left [${examLength-MinCounter}:${59-SecCounter}]`
-  if(MinCounter==(examLength-0.9*examLength)){                                                    //5mins alert timer
+   // low time remaining animation timer
+  if(MinCounter==(examLength-0.1*examLength)){                                                   
     timer.className="timer2"
   }
   if(MinCounter==examLength){
