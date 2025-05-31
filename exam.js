@@ -151,7 +151,7 @@ function timeOutSubmit(){
 }
 
 // exam length
-var examLength=10;
+var examLength=10; 
 let SecCounter = 0;
 let MinCounter=0;
 let intr=setInterval(function () {
