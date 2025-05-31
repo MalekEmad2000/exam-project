@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-        }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
 
-        body {
-            display: flex;
-            height: 100vh;
-            overflow: hidden;
-            justify-content: center;
-            align-items: center;
-            background: #00D4FF;
-            background: linear-gradient(180deg, rgba(0, 212, 255, 1) 0%, rgba(125, 233, 255, 1) 35%, rgba(255, 255, 255, 1) 100%);
-        }
+      body {
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        background: #00d4ff;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 212, 255, 1) 0%,
+          rgba(125, 233, 255, 1) 35%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div style="font-size: 50px;font-weight: 600;"></div>
+  <body>
+    <div style="font-size: 50px; font-weight: 600"></div>
     <script>
-        let div = document.getElementsByTagName("div")[0];
-        var name= localStorage.getItem('name');
-        div.textContent = name+` Your Exam Score is : ${location.search.split("=")[1]}%`;
+      let div = document.getElementsByTagName("div")[0];
+      var name = localStorage.getItem("name");
+      div.textContent =
+        name + ` Your Exam Score Is : ${location.search.split("=")[1]}%`;
     </script>
-</body>
-
+  </body>
 </html>
