@@ -17,22 +17,6 @@ Built using HTML, CSS, and JavaScript.
 
 ---
 
-## 🖼️ Screenshots
-
-> You can upload images to the repo and reference them here like this:
-> `![Login Page](./images/login.png)`
-
-### 👇 Login Page
-![Login Page](https://raw.githubusercontent.com/MalekEmad2000/exam-project/main/images/login.png)
-
-### 👇 Exam Page
-![Exam Page](https://raw.githubusercontent.com/MalekEmad2000/exam-project/main/images/exam.png)
-
-### 👇 Bookmark Feature
-![Bookmark Feature](https://raw.githubusercontent.com/MalekEmad2000/exam-project/main/images/bookmark.png)
-
----
-
 ## 🛠️ Technologies Used
 
 - HTML5
